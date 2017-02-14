@@ -1,0 +1,4 @@
+implicit val sortIntegersByString = new Ordering[Int] { override def compare(a: Int, b: Int) = a.compare(b)*(-1) }
+var fichero = sc.textFile("/vagrant/quijote.txt")
+val par = fichero.flatMap(l => l.split("\\W")).map(p => (p,1)).reduceByKey((a,b) => a+b).sortBy(_._2)
+par.take(10).foreach(println)
