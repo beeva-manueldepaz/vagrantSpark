@@ -10,8 +10,8 @@ Ejecutar:
 
 Listo para probar
 
-Para MAC
---------
+Para MAC y Linux
+----------------
 
 Asegurarse de que el fichero `install.sh` tiene permisos de ejecucin:
 
