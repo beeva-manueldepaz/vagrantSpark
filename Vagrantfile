@@ -8,6 +8,7 @@ Vagrant.configure("2") do |config|
 	v.memory = 4096
   end
 
+  config.vm.network "forwarded_port", guest: 4040, host: 4040
   config.vm.synced_folder ".", "/vagrant", type:"virtualbox"
 
   config.vm.provision "shell", inline: <<-SHELL
