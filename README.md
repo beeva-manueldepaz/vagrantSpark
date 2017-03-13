@@ -9,12 +9,3 @@ Ejecutar:
 ```
 
 Listo para probar
-
-Para MAC y Linux
-----------------
-
-Asegurarse de que el fichero `install.sh` tiene permisos de ejecucin:
-
-```bash
-> chmod +x install.sh
-```
